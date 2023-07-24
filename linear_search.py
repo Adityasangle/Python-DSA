@@ -4,5 +4,4 @@ def linear_search(arr,x):
             return i
     return -1
 
-ans = linear_search([1,2,3,4,5],5)
-print(ans)
+print(linear_search([1,2,3,4,5],5))
