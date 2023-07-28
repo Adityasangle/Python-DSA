@@ -1,0 +1,13 @@
+import math
+
+def count_digits(num):
+    count= 0
+    while(num>0):
+        num = num//10
+        count+=1
+    return count
+
+
+def count_digits_opt(num):
+    return math.floor(math.log10(num)+1)
+print(count_digits_opt(1))
