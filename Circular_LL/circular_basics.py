@@ -40,7 +40,14 @@ class CircularLinkedList:
             self.head = node
             self.tail.next = node
 
-
+    def insert_at_end(self,data):
+        node = Node(data)
+        if self.head is None:
+            self.head = node
+            node.next = self.head
+        else:
+            self.tail.next = node
+            node.next = self.head
 
 
 
@@ -53,4 +60,6 @@ for i in range(number_of_nodes):
     ll.append(node)
 ll.display()
 ll.insert_at_beg(50)
+ll.display()
+ll.insert_at_end(60)
 ll.display()

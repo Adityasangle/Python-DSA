@@ -1,6 +1,9 @@
-def odd(x):
-    if x%2!=0:
-        return x
+#Apple question
+def reverse_str(s):
+    if s == "":
+        return ""
+    else:
+        return reverse_str(s[1:]) + s[0]
+    
 
-odds = list(filter(odd,[1,2,3,4,5]))
-print(odds)
+print(reverse_str("hello"))
