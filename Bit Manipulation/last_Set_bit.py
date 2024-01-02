@@ -6,4 +6,4 @@ def lastSetBit(n):
         n = n>>1
         res+=1
 
-print(lastSetBit(16)) #10000
+print(lastSetBit(16)) #10000            

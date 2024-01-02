@@ -10,4 +10,4 @@ def print2largest(arr, n):
                  sec_max = arr[i]
         return sec_max
 
-print(print2largest([2,34,1,10,35,1],6))
+print(print2largest([2,39,1,10,35,67],6))

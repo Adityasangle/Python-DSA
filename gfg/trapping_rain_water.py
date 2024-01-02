@@ -20,5 +20,25 @@ def getwater(height):
 
     return res
 
+
+
+def getwater2(arr,n):
+    leftmax = [0]*len(arr)
+    rightmax = [0]*len(arr)
+
+    leftmax[0]=arr[0]
+    for i in range(1,len(arr)):
+        leftmax[i] = max(arr[i],leftmax[i-1])
+
+    rightmax[len(arr)-1] = arr[len(arr)-1]
+    for j in range(len(arr)-2,-1,-1):
+        rightmax[j] = max(arr[j],rightmax[j+1])
+
+    # print(leftmax, " ",rightmax)
+    count = 0
+    for i in range(n):
+        count+=min(leftmax[i],rightmax[i])-arr[i]
+    print(count)
 height = [4,2,0,3,2,5]
 print(getwater(height))
+getwater2(height,6)

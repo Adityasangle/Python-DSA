@@ -7,7 +7,7 @@ class Node:
 class Deque:
     def __init__(self):
         self.head = None
-        self.prev = None
+        self.tail = None
         self.sz = 0
     
     def insertFront(self,x):

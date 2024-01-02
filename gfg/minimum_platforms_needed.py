@@ -9,7 +9,7 @@ def minimum_platforms(arr,dep):
     while i<n and j<n:
         if arr[i]-dep[j]>0:
             plat_occ-=1
-            j+=1
+            j+=1 
         else:
             plat_occ+=1
             i+=1
